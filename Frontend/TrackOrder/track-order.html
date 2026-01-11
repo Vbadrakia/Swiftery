@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Track Order - Swiftery</title>
+    <link rel="stylesheet" href="/HomePage/style.css">
+    <link rel="stylesheet" href="track-order.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Updated Navbar -->
+    <div id="nav">
+        <ul>
+            <li class="name">Swiftery</li>
+            <li><a href="../HomePage/index.html">HOME</a></li>
+            <!-- <li><a href="../Pricing/pricing.html">PRICING</a></li> -->
+            <li><a href="../Login/index.html">LOGIN</a></li>
+            <!-- <li><a href="../SignUp/index.html">SIGN-UP</a></li> -->
+            <li><a href="../AboutUs/about-us.html">ABOUT US</a></li>
+            <li><a href="../Contact US/index.html">CONTACT US</a></li>
+            <li><a href="../PlaceOrder/place-order.html">PLACE ORDER</a></li>
+            <li><a href="../TrackOrder/track-order.html">TRACK ORDER</a></li>
+        </ul>
+    </div>
+    <div class="container">
+        <!-- Hero Section -->
+        <div class="hero-section">
+            <div class="hero-content">
+                <h1><i class="fas fa-box-open"></i> Track Your Shipment</h1>
+                <p>Know exactly where your package is at every moment</p>
+            </div>
+        </div>
+
+        <!-- Search Section -->
+        <div class="search-section">
+            <form id="track-order-form">
+                <div class="search-box">
+                    <div class="input-wrapper">
+                        <i class="fas fa-search"></i>
+                        <input type="text" id="trackingId" name="trackingId" placeholder="Enter Tracking ID (e.g., ORD-123456)" required>
+                        <button type="submit" class="btn-search"><i class="fas fa-arrow-right"></i></button>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <!-- Results Section -->
+        <div id="order-details" class="results-section">
+            <!-- Will be populated by JavaScript -->
+        </div>
+    </div>
+    <script src="track-order.js"></script>
+</body>
+
+</html>

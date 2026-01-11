@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Login and Registration Form</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+
+<body>
+  <div id="nav">
+    <ul>
+      <li class="name">Swiftery</li>
+      <li><a href="../HomePage/index.html">HOME</a></li>
+      <li><a href="../Login/index.html">LOGIN</a></li>
+      <!-- <li><a href="../AboutUs/about-us.html">ABOUT US</a></li> -->
+      <li><a href="../Contact US/index.html">CONTACT US</a></li>
+      <li><a href="../PlaceOrder/place-order.html">PLACE ORDER</a></li>
+      <li><a href="../TrackOrder/track-order.html">TRACK ORDER</a></li>
+    </ul>
+  </div>
+
+  <div class="container">
+    <input type="checkbox" id="flip">
+    <div class="cover">
+      <div class="front">
+        <img src="frontImg.jpg" alt="">
+        <div class="text">
+          <span class="text-1">Make seamless connections <br> with us</span>
+          <br>
+          <span class="text-2">Let's get connected</span>
+        </div>
+      </div>
+      <div class="back">
+        <img class="backImg" src="backImg.jpg" alt="">
+        <div class="text">
+          <span class="text-1">Contact a reliable service <br> provider</span>
+          <br>
+          <span class="text-2">Let's get started</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="forms">
+      <div class="form-content">
+
+        <div class="login-form">
+          <div class="title">Login</div>
+          <form id="form" method="POST">
+            <div class="input-boxes">
+              <div class="input-box">
+                <i class="fas fa-envelope"></i>
+                <input type="text" name="email" placeholder="Enter your email" required>
+              </div>
+              <div class="input-box">
+                <i class="fas fa-lock"></i>
+                <input type="password" name="password" placeholder="Enter your password" required>
+              </div>
+              <div class="text"><a href="#">Forgot password?</a></div>
+              <div class="button input-box">
+                <input type="submit" value="Submit">
+              </div>
+              <div class="text sign-up-text">Don't have an account?
+                <label for="flip">Signup now</label>
+              </div>
+            </div>
+          </form>
+        </div>
+
+        <div class="signup-form">
+          <div class="title">Signup</div>
+          <form id="form2">
+            <div class="input-boxes">
+              <div class="input-box">
+                <i class="fas fa-user"></i>
+                <input id="name" type="text" placeholder="Enter your name" required>
+              </div>
+              <div class="input-box">
+                <i class="fas fa-envelope"></i>
+                <input id="email" type="text" placeholder="Enter your email" required>
+              </div>
+              <div class="input-box">
+                <i class="fas fa-lock"></i>
+                <input id="password" type="password" placeholder="Enter your password" required>
+              </div>
+              <div class="button input-box">
+                <input type="submit" value="Submit" id="loginButton">
+              </div>
+              <div class="text sign-up-text">Already have an account? <label for="flip">Login now</label></div>
+            </div>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
