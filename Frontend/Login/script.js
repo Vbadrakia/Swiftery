@@ -3,7 +3,7 @@ async function handleLogin(event) {
     const email = document.querySelector('input[name="email"]').value;
     const password = document.querySelector('input[name="password"]').value;
 
-    const response = await fetch("http://localhost:3000/login", {
+    const response = await fetch(`${window.API_BASE}/login`, {
         method: "POST",
         headers: {
             "Content-Type": "application/json"
@@ -34,7 +34,7 @@ async function handleSignUp(event) {
     const email = document.querySelector('#email').value;
     const password = document.querySelector('#password').value;
     console.log("make request")
-    const response = await fetch("http://localhost:3000/create-user", {
+    const response = await fetch(`${window.API_BASE}/create-user`, {
         method: "POST",
         headers: {
             "Content-Type": "application/json"

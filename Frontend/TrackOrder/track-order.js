@@ -17,7 +17,7 @@ document.getElementById("track-order-form").addEventListener("submit", async (ev
     `;
 
     try {
-        const response = await fetch(`http://localhost:3000/track-order/${trackingId}`);
+        const response = await fetch(`${window.API_BASE}/track-order/${trackingId}`);
         const data = await response.json();
 
         if (response.status === 200) {

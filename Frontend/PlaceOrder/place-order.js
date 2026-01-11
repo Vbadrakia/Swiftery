@@ -26,7 +26,7 @@ document
     const weight = document.getElementById("weight").value;
 
     try {
-      const response = await fetch("http://localhost:3000/create-order", {
+      const response = await fetch(`${window.API_BASE}/create-order`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

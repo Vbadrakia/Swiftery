@@ -18,8 +18,14 @@ const app = express();
 
 app.use(
   cors({
-    origin: "*",
-    methods: ["GET", "POST"],
+    origin: [
+      "http://localhost:3000",
+      "http://localhost:8080",
+      "https://swiftery.pages.dev",
+      process.env.FRONTEND_URL || "*"
+    ],
+    methods: ["GET", "POST", "PUT", "DELETE"],
+    credentials: true
   })
 );
 app.use(express.json());
