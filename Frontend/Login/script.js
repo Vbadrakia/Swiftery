@@ -13,6 +13,8 @@ async function handleLogin(event) {
 
     if (response.ok) {
         const data = await response.json();
+        // Store user data in localStorage
+        localStorage.setItem('user', JSON.stringify(data.user));
         alert("Welcome " + data.user.name); // Show success message
         window.location.href = "../HomePage/index.html"; // Redirect to homepage
 
