@@ -1,18 +1,6 @@
 # Swiftery - Moving & Courier Delivery Platform
 
-## Recruiter Summary
-
-- Purpose: Full-stack delivery platform to place and track orders.
-- Role: End‑to‑end build — Frontend (HTML/CSS/JS), Backend (Node.js/Express), Database (MongoDB/Mongoose).
-- Highlights: Auth, order placement, real-time tracking, service locations, responsive UI, documented architecture.
-- Architecture: 3-tier (Frontend → REST API → MongoDB) with modular models (`user`, `order`, `location`).
-- Quick Run:
-  ```
-  cd Backend && npm install && npm start
-  # Frontend
-  open Frontend/HomePage/index.html  # or: cd Frontend/HomePage && npm install && npm start
-  ```
-- Repo: https://github.com/Vbadrakia/Swiftery
+**Quick recruiter summary (30s read):** Full-stack courier/delivery web app. Built with Node.js/Express, MongoDB, and vanilla HTML/CSS/JS. Supports sign-up/login, placing orders, tracking shipments, viewing service locations, and contact/support. Clean 3-tier architecture, responsive UI, and documented APIs.
 
 ---
 
